@@ -1,0 +1,526 @@
+@font-face {
+    font-family: poppins;
+    src: url(PoppinsRegular-B2Bw.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+header{
+    position: fixed;
+    top: 0;left: 0;
+    width: 100%;
+    background: rgb(28, 143, 215);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .logo{
+    width: 12rem;
+}
+header .logo img{
+    width: 100%;
+}
+header .navbar a{
+    font-size: 1.9rem;
+    margin-left: 5rem;
+    color: #fff;
+    text-decoration: none;
+}
+header .navbar a:hover{
+    color: lightblue;
+}
+header .navbar .login{
+    border: 1px solid #fff;
+    padding: .5rem 2rem;
+}
+header .navbar .login:hover{
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+}
+header input{
+    display: none;
+}
+header label{
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.imag img{
+    width: 100%;
+    height: 760px;
+  }
+  #text{
+      font-size: 6rem;
+      color: #fff;
+  }
+  #text-detail{
+      font-size: 2rem;
+  }
+.products{
+    padding: 10rem;
+}
+  .products i{
+      font-size: 3.5rem;
+      background-color: blue;
+      color: #ffff;
+      padding: 1.6rem;
+      border-radius: 4px;
+      padding-bottom: 1.8rem;
+  }
+  .products input{
+      border: 1px solid #3333;
+      width: 60rem;
+      height: 6.4rem;
+      padding: 1.9rem;
+      border-radius: 4px;
+      font-size: 30px;
+  }
+
+  .products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.products .box-container .box{
+    border-radius: .5rem;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid rgb(169, 169, 169);
+}
+.products .box-container .box .img{
+    width: 100%;
+    height: 300px;
+}
+.products .box-container .box .img img{
+    width: 100%;
+    height: 100%;
+}
+.products .box-container .box h3{
+    padding: 1.5rem;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.products .box-container .box p{
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
+    color: rgb(89, 89, 89);
+}
+.products .box-container .box button{
+    margin: 1.5rem;
+    width: 90%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    background-color:rgb(90, 90, 186);
+    color: #ffff;
+    border-radius: 4px;
+}
+
+
+/* ----------------footer------------- */
+
+
+footer{
+    background: rgb(28, 143, 215);
+    padding: 50px 20px;
+    border-top: 3px solid #4eb060;
+}
+.footer-container{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo a img{
+    width: 19rem;
+}
+.footer-socail{
+    display: flex;
+    margin-top: 2rem;
+}
+.footer-socail a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    background: #3333;
+    font-size: 2rem;
+    margin: 0 5px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.footer-socail a:hover{
+    background-color: #ffff;
+    color: #000;
+}
+.footer-links strong{
+   color: #ffff;
+   font-size: 2.3rem;
+   font-weight: 500;
+}
+.footer-links ul{
+    margin-top: 10px;
+    list-style: none;
+}
+.footer-links ul li a{
+    text-decoration: none;
+    color: #ffff;
+    margin: 4px 0px;
+    font-size: 1.7rem;
+    line-height: 2;
+}
+.footer-links ul li a:hover{
+    margin-left: 3px ;
+    color: #f5e317;
+}
+.footer-links ul li a i{
+    color: rgb(91, 83, 83);
+    padding-right: .5rem;
+}
+.footer-links h3{
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #eee;
+}
+.h3{
+    position: relative;
+    left: -10px;
+}
+
+
+/* ------------about-start---------------- */
+
+.about{
+    height: 100vh;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 20rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+.about h1{
+    font-size: 3rem;
+}
+.about .img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-top: 3rem;
+}
+.about h4{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+.about h6{
+    font-size: 2rem;
+    font-weight: normal;
+}
+.about h2{
+    font-size: 2.9rem;
+    margin-top: 6rem;
+}
+.about p{
+    padding: 0px 20rem;
+    font-size: 1.7rem;
+    font-weight: normal;
+    margin-top: 2rem;
+    text-align: justify;
+}
+/* -------------contcat-----------section------- */
+
+.contact form{
+    margin: 3rem auto 10rem auto;
+    max-width: 70rem;
+    border-radius: .5rem;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(188, 188, 188, 0.767);
+    padding: 2rem;
+}
+.contact form .box{
+    padding: 1rem 1.5rem;
+    width: 100%;
+    background: none;
+    font-size: 1.6rem;
+    text-transform: none;
+    margin: 1rem 0;
+    background-color: #eee;
+    border-radius: .5rem;
+}
+.contact form textarea{
+    height: 20rem;
+    resize: none;
+}
+
+.contact form .custom-btn {
+    font-size: 17px;
+    color: #ffff;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background: linear-gradient(0deg, #971d9a 0%, #293b90 100%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    margin-top: 2rem;
+  }
+  .contact form .custom-btn:hover{
+    background: linear-gradient(90deg, #971d9a 0%, #293b90 100%);
+}
+  input[type="checkbox"]{
+      width: 20px;
+      height: 20px;
+      border: 1px solid #eee;
+      outline: none;
+      margin-bottom: 2rem;
+  }
+  form span{
+      font-size: 1.5rem;
+      padding-left: 1rem;
+  }
+  .contact h1{
+      font-size: 4rem;
+      margin-top: 25rem;
+      text-align: center;
+  }
+/* -----------login-form-------------- */
+.sign-up{
+    width: 500px;
+    height: auto;
+    margin: auto;
+    box-shadow: 0 10px 13px -7px #000, 5px 5px 8px 5px transparent;
+    text-align: center!important;
+    background-color: #fff;
+    margin-top: 25rem;
+    margin-bottom: 15rem;
+    padding-bottom: 30px;
+    border-radius: .5rem;
+}
+.form-title{
+    background: linear-gradient(90deg, #293b90, #98189a) !important;
+    color: #fff;
+    padding: 30px 0px;
+    font-size: 4rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+.input{
+    width: 80%;
+    border: 1px solid #98189a;
+    border-radius: 5px;
+    outline: none;
+    color: #98189a;
+    font-size: 12px!important;
+    padding: 15px;
+    font-family: "Bree Serif",serif!important;
+    margin-top: 4rem;
+    font-size: 20px;
+}
+input::placeholder{
+    font-size: 2rem;
+    color: rgba(51, 51, 51, 0.542);
+}
+._text{
+    color: #98189a;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+._text:hover{
+    color: #293b90;
+}
+.btn{
+    width: 40%;
+    border: none;
+    padding: 2.5%;
+    border-radius: .5rem;
+    margin-top: 20px;
+    outline: none!important;
+    background: linear-gradient(90deg,#293b90,#98189a)!important;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+}
+.btn:hover{
+    background: linear-gradient(-90deg,#293b90,#98189a)!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+    section p{
+        padding: 0px 10rem;
+    }
+}
+
+@media(max-width:900px){
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgb(28, 143, 215);
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0,0,0,0.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+        transform-origin: top;
+        transform: scale(0);
+        opacity: 0;
+    }
+    header .navbar a{
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+        width: 100%;
+    }
+    header .navbar .login{
+        border: none;
+        padding: 0;
+    }
+    header input:checked ~ .navbar{
+        transform: scale(1);
+        opacity: 1;
+    }
+    header input:checked ~ label::before{
+        content: '\f00d';
+    }
+}
+@media(max-width:900px){
+    .imag img{
+        width: 100%;
+        height: 500px;
+      }
+      #text{
+          font-size: 2rem;
+          color: #fff;
+      }
+      #text-detail{
+          font-size: 1rem;
+      }
+      .products input{
+        width: 50rem;
+    }
+    .products{
+        padding: 5rem;
+    }
+    section p{
+        padding: 0px 10rem;
+    }
+    
+}
+@media(max-width:600px){
+    .products input{
+        width: 33rem;
+    }
+    .products{
+        padding: 5rem;
+    }
+    section p{
+        padding: 0px 5rem;
+    }
+    .sign-up{
+        width: 370px;
+    }
+}
+@media(max-width:400px){
+    .imag img{
+        width: 100%;
+        height: 300px;
+      }
+      .products i{
+        font-size: 2rem;
+        background-color: blue;
+        color: #ffff;
+        padding: 1.2rem;
+        border-radius: 4px;
+    }
+    .products input{
+        border: 1px solid #3333;
+        width: 25rem;
+        height: 4rem;
+        font-size: 20px;
+    }
+    .products{
+        padding: 3rem;
+    }
+    .footer-container{
+        width: 100%;
+        margin-top: 5rem;
+        display: block;
+        align-items: center;
+    }
+    .footer-links strong{
+        color: #ffff;
+        font-size: 2.3rem;
+        font-weight: 500;
+        padding-top: 2rem;
+     }
+     .about p{
+        padding: 0px 2rem;
+    }
+    .about h1{
+        font-size: 2rem;
+    }
+    .about h4{
+        font-size: 2rem;
+    }
+    .about img{
+        width: 200px;
+        height: 200px;
+    }
+    .contact h1{
+        margin-top: 22rem;
+        font-size: 2.5rem;
+    }
+    .sign-up{
+        width: 300px;
+    }
+    }
